@@ -16,7 +16,7 @@ int main(int argc, char** argv)
   double searchRadius = 100.0;
   if (argc == 2)
     plyFilename = std::string(argv[1]);
-  else if (argc == 3)
+  if (argc == 3)
     searchRadius = std::stod(argv[2]);
 
   PCXYZ::Ptr cloud(new PCXYZ);
